@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b16n2vw4n1nwr"]
+
+[ext_resource type="Script" path="res://zfields/stopper.gd" id="1_0c2gd"]
+[ext_resource type="Texture2D" uid="uid://cqmvp1282cqbb" path="res://spr/stopper.png" id="2_gomnj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e2ry8"]
+radius = 16.0
+
+[node name="Stopper" type="Area2D"]
+rotation = 141.372
+script = ExtResource("1_0c2gd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_gomnj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_e2ry8")

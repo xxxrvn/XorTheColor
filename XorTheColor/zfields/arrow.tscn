@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwl1yy4twgvi8"]
+
+[ext_resource type="Script" path="res://zfields/arrow.gd" id="1_ms2po"]
+[ext_resource type="Texture2D" uid="uid://ciktjxgukeyik" path="res://spr/arrow.png" id="2_7s541"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e2ry8"]
+radius = 16.0
+
+[node name="Arrow" type="Area2D"]
+rotation = 141.372
+script = ExtResource("1_ms2po")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_7s541")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_e2ry8")

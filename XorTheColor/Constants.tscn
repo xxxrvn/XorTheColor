@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvimvnp8p2xwt"]
+
+[ext_resource type="Script" path="res://Constants.gd" id="1_l41ot"]
+
+[node name="Constants" type="Node"]
+script = ExtResource("1_l41ot")

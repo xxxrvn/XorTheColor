@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3 uid="uid://vajcbiuv1im7"]
+
+[ext_resource type="Script" path="res://addons/shape_texture_2d/shape_texture_2d.gd" id="1_66y2n"]
+[ext_resource type="Script" path="res://juwels/Juwel.gd" id="1_jmgw1"]
+[ext_resource type="Script" path="res://addons/shape_texture_2d/drawable_rectangle.gd" id="3_blb2x"]
+
+[sub_resource type="Gradient" id="Gradient_ju5kw"]
+
+[sub_resource type="Resource" id="Resource_ti54p"]
+script = ExtResource("3_blb2x")
+corner_rounding = 0.0
+
+[sub_resource type="Gradient" id="Gradient_knea6"]
+
+[sub_resource type="Texture2D" id="Texture2D_5u6sf"]
+resource_local_to_scene = true
+resource_name = ""
+script = ExtResource("1_66y2n")
+size = Vector2i(16, 16)
+shape = SubResource("Resource_ti54p")
+fill_type = 0
+fill_color = Color(0, 0, 0, 1)
+fill_gradient = SubResource("Gradient_ju5kw")
+fill_from = Vector2(0, 0)
+fill_to = Vector2(1, 0)
+fill_repeat = "pad"
+stroke_type = 0
+stroke_width = 2.0
+stroke_color = Color(0.5, 0.5, 0.5, 1)
+stroke_gradient = SubResource("Gradient_knea6")
+stroke_from = Vector2(0, 0)
+stroke_to = Vector2(1, 0)
+stroke_repeat = "pad"
+stroke_joint = "round"
+offset = Vector2(0, 0)
+rotation = 0.0
+scale = Vector2(1, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4psbt"]
+size = Vector2(16, 16)
+
+[node name="Juwel" type="Area2D"]
+script = ExtResource("1_jmgw1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("Texture2D_5u6sf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4psbt")

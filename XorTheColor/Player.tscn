@@ -1,0 +1,49 @@
+[gd_scene load_steps=9 format=3 uid="uid://div4mvvfyp1bv"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_gn1cl"]
+[ext_resource type="Script" path="res://addons/shape_texture_2d/shape_texture_2d.gd" id="2_an5og"]
+[ext_resource type="Script" path="res://addons/shape_texture_2d/drawable_ellipse.gd" id="3_8bu7w"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qv41r"]
+radius = 14.0
+
+[sub_resource type="Gradient" id="Gradient_lrv6y"]
+
+[sub_resource type="Resource" id="Resource_kxc5v"]
+script = ExtResource("3_8bu7w")
+
+[sub_resource type="Gradient" id="Gradient_u26t1"]
+
+[sub_resource type="Texture2D" id="Texture2D_alkd0"]
+resource_local_to_scene = true
+resource_name = ""
+script = ExtResource("2_an5og")
+size = Vector2i(32, 32)
+shape = SubResource("Resource_kxc5v")
+fill_type = 0
+fill_color = Color(0, 0, 0, 0.5)
+fill_gradient = SubResource("Gradient_lrv6y")
+fill_from = Vector2(0, 0)
+fill_to = Vector2(1, 0)
+fill_repeat = "pad"
+stroke_type = 0
+stroke_width = 2.0
+stroke_color = Color(0, 0, 0, 1)
+stroke_gradient = SubResource("Gradient_u26t1")
+stroke_from = Vector2(0, 0)
+stroke_to = Vector2(1, 0)
+stroke_repeat = "pad"
+stroke_joint = "round"
+offset = Vector2(0, 0)
+rotation = 0.0
+scale = Vector2(1, 1)
+
+[node name="Player" type="Area2D" groups=["Players"]]
+z_index = 1
+script = ExtResource("1_gn1cl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qv41r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("Texture2D_alkd0")

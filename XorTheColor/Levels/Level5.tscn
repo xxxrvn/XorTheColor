@@ -1,0 +1,217 @@
+[gd_scene load_steps=8 format=3 uid="uid://dam1avmhrutaw"]
+
+[ext_resource type="PackedScene" uid="uid://div4mvvfyp1bv" path="res://Player.tscn" id="1_yec5f"]
+[ext_resource type="PackedScene" uid="uid://vajcbiuv1im7" path="res://juwels/Juwel.tscn" id="2_dheqe"]
+[ext_resource type="PackedScene" uid="uid://c22vpvg70stef" path="res://blocks/BounceBlock.tscn" id="3_wemxs"]
+[ext_resource type="PackedScene" uid="uid://dxn2xl0rh7yao" path="res://blocks/Block.tscn" id="4_p80m3"]
+[ext_resource type="PackedScene" uid="uid://dy858xexdfii0" path="res://xfields/XField.tscn" id="5_d6nts"]
+[ext_resource type="PackedScene" uid="uid://dw7ay4tirqi7c" path="res://Checker.tscn" id="6_renmm"]
+[ext_resource type="PackedScene" uid="uid://b16n2vw4n1nwr" path="res://zfields/stopper.tscn" id="7_dwqnn"]
+
+[node name="Level1" type="Node2D" groups=["Levels"]]
+
+[node name="Players" type="Node" parent="."]
+
+[node name="Player" parent="Players" instance=ExtResource("1_yec5f")]
+position = Vector2(208, 80)
+col = 1
+
+[node name="Player2" parent="Players" instance=ExtResource("1_yec5f")]
+position = Vector2(176, 112)
+col = 2
+
+[node name="Player3" parent="Players" instance=ExtResource("1_yec5f")]
+position = Vector2(144, 144)
+col = 4
+
+[node name="Player4" parent="Players" instance=ExtResource("1_yec5f")]
+position = Vector2(112, 176)
+col = 7
+
+[node name="Juwels" type="Node" parent="."]
+
+[node name="Juwel" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(240, 80)
+
+[node name="Juwel2" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(272, 112)
+
+[node name="Juwel3" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(304, 144)
+
+[node name="Juwel4" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(336, 176)
+
+[node name="Juwel5" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(112, 208)
+
+[node name="Juwel6" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(144, 240)
+
+[node name="Juwel7" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(176, 272)
+
+[node name="Juwel8" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(208, 304)
+
+[node name="Juwel9" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(208, 112)
+
+[node name="Juwel10" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(240, 272)
+
+[node name="Juwel13" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(272, 240)
+
+[node name="Juwel14" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(304, 208)
+
+[node name="Juwel11" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(144, 176)
+
+[node name="Juwel12" parent="Juwels" instance=ExtResource("2_dheqe")]
+position = Vector2(176, 144)
+
+[node name="Blocks" type="Node" parent="."]
+
+[node name="BounceBlock4" parent="Blocks" instance=ExtResource("3_wemxs")]
+position = Vector2(336, 144)
+
+[node name="BounceBlock8" parent="Blocks" instance=ExtResource("3_wemxs")]
+position = Vector2(208, 336)
+
+[node name="BounceBlock10" parent="Blocks" instance=ExtResource("3_wemxs")]
+position = Vector2(144, 272)
+
+[node name="BounceBlock12" parent="Blocks" instance=ExtResource("3_wemxs")]
+position = Vector2(80, 208)
+
+[node name="Block" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(368, 208)
+
+[node name="Block16" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(272, 48)
+
+[node name="Block17" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(304, 80)
+
+[node name="Block2" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(336, 240)
+
+[node name="Block3" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(304, 272)
+
+[node name="Block4" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(272, 304)
+
+[node name="Block5" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(240, 336)
+
+[node name="Block6" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(208, 48)
+
+[node name="Block7" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(176, 80)
+
+[node name="Block8" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(144, 112)
+
+[node name="Block9" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(112, 144)
+
+[node name="Block10" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(80, 176)
+
+[node name="Block11" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(112, 240)
+
+[node name="Block12" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(176, 304)
+
+[node name="Block13" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(368, 176)
+
+[node name="Block14" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(304, 112)
+
+[node name="Block15" parent="Blocks" instance=ExtResource("4_p80m3")]
+position = Vector2(240, 48)
+
+[node name="XFields" type="Node" parent="."]
+
+[node name="XField" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(240, 80)
+col = 7
+
+[node name="XField5" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(208, 304)
+col = 7
+
+[node name="XField2" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(272, 112)
+col = 2
+
+[node name="XField9" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(208, 112)
+col = 3
+
+[node name="XField10" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(240, 272)
+col = 3
+
+[node name="XField6" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(176, 272)
+col = 2
+
+[node name="XField3" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(304, 144)
+col = 4
+
+[node name="XField7" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(144, 240)
+col = 4
+
+[node name="XField4" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(336, 176)
+col = 1
+
+[node name="XField8" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(112, 208)
+col = 1
+
+[node name="XField11" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(176, 144)
+col = 5
+
+[node name="XField13" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(272, 240)
+col = 5
+
+[node name="XField12" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(144, 176)
+col = 6
+
+[node name="XField14" parent="XFields" instance=ExtResource("5_d6nts")]
+position = Vector2(304, 208)
+col = 6
+
+[node name="Checker" parent="." instance=ExtResource("6_renmm")]
+
+[node name="ZFields" type="Node" parent="."]
+
+[node name="Stopper" parent="ZFields" instance=ExtResource("7_dwqnn")]
+position = Vector2(240, 208)
+
+[node name="Stopper2" parent="ZFields" instance=ExtResource("7_dwqnn")]
+position = Vector2(208, 176)
+
+[node name="Stopper3" parent="ZFields" instance=ExtResource("7_dwqnn")]
+position = Vector2(208, 176)
+
+[node name="Stopper4" parent="ZFields" instance=ExtResource("7_dwqnn")]
+position = Vector2(240, 176)
+rotation = 0.000649214
+
+[node name="Stopper5" parent="ZFields" instance=ExtResource("7_dwqnn")]
+position = Vector2(208, 208)
+rotation = -3.14062
